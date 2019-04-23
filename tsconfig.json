@@ -1,0 +1,29 @@
+{
+	"include": [
+		"src/**/*"
+	],
+	"compilerOptions": {
+		"allowSyntheticDefaultImports": true,
+		"experimentalDecorators": true,
+		"allowJs": true,
+		"module": "esnext",
+		"target": "es5",
+		"moduleResolution": "node",
+		"isolatedModules": true,
+		"lib": [
+			"dom",
+			"es5",
+			"es6",
+			"es7",
+			"es2015",
+			"es2015.promise"
+		],
+		"jsx": "react",
+		"sourceMap": true,
+		"pretty": true,
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["src/*"]
+		}
+	}
+}
