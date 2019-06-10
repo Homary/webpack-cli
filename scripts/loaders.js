@@ -24,7 +24,7 @@ const isProd = webpackConfig.get('mode') === 'production';
 			.loader('postcss-loader')
 			.options({ 
 				plugins: [
-					require('autoprefixer')( {browsers: ['last 5 versions']} )
+					require('autoprefixer')()
 				] 
 			})
 
