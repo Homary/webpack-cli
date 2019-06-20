@@ -170,7 +170,11 @@ module.exports = webpackConfig => {
 
 		if (!targetDir.endsWith('/')) {
 			targetDir = targetDir + '/';
-		}
+        }
+        
+        if(targetDir === '/') {
+            targetDir = './';
+        }
 
 		let configFiles = fs.readdirSync(path.resolve(__dirname, source), {});
 
