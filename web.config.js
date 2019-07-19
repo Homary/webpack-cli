@@ -3,7 +3,7 @@ module.exports = {
 	rootID: 'app',
 	extensions: ['.js', '.ts', '.tsx', '.less', '.css'],
 	alias: {
-		'@': '.src/'
+		'@': 'src/'
 	},
 	server: {
 		port: '3333'
