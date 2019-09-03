@@ -44,7 +44,7 @@ const isProd = webpackConfig.get('mode') === 'production';
 			if(lessCommonOption) {
 				baseRule.use('style-resources-loader')
 					.loader('style-resources-loader')
-					.options({ patterns: api.resolve(lessCommonOption) })
+					.options({ patterns: lessCommonOption })
 			}
 		}
 	}
